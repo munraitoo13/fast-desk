@@ -4,12 +4,4 @@
 
 body {
   background-color: #f7fafc;
-  height: 100dvh;
-  width: 100dvw;
-  padding: 0 2rem;
-}
-
-#root {
-  height: 100%;
-  width: 100%;
 }

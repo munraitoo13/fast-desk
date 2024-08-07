@@ -1,8 +1,8 @@
 export default function Login() {
   return (
     <>
-      <main className="h-screen w-screen flex flex-col items-center justify-center">
-        <section className="flex flex-col items-center p-5 bg-neutral-100 shadow-xl rounded-xl gap-3">
+      <main className="h-full flex flex-col items-center justify-center">
+        <section className="flex flex-col items-center p-5 bg-neutral-100 shadow-md rounded-xl gap-3">
           <div>
             <img src="/logo.png" alt="FastDesk logo" />
           </div>

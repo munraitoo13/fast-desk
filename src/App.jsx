@@ -14,9 +14,9 @@ export default function App() {
         </div>
       </nav>
 
-      <main className="flex flex-col justify-center items-center gap-10">
+      <main className="flex flex-col justify-center items-center gap-10 my-20 mx-10">
         {/* embeds */}
-        <div className="flex items-center flex-col justify-center w-full gap-5">
+        <div className="flex items-center lg:flex-row max-w-screen-xl flex-col justify-center w-full gap-5">
           {/* vp1 */}
           <div className=" w-full flex items-center flex-col gap-1">
             <h2 className="font-medium">Video Pitch 1</h2>
@@ -39,12 +39,19 @@ export default function App() {
         </div>
 
         {/* info */}
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center gap-3">
           <p className="text-center">
             Quer saber mais sobre quem somos?
             <br />
             Clique no botão abaixo.
           </p>
+
+          <a
+            className="px-5 py-2 bg-neutral-950 text-neutral-100 rounded-xl hover:opacity-90"
+            href="/about"
+          >
+            Sobre o projeto
+          </a>
         </div>
       </main>
     </>
