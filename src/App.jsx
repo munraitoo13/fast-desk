@@ -1,35 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <nav className="w-full p-5 flex justify-between h-24">
+        <img src="/logo.png" alt="logo" />
 
-export default App
+        <div className="flex gap-3 justify-center items-center">
+          <a
+            className="px-5 py-2 bg-neutral-900 rounded-xl text-neutral-100 hover:opacity-90"
+            href="/login"
+          >
+            Login
+          </a>
+        </div>
+      </nav>
+
+      <main className="flex flex-col justify-center items-center gap-10">
+        {/* embeds */}
+        <div className="flex items-center flex-col justify-center w-full gap-5">
+          {/* vp1 */}
+          <div className=" w-full flex items-center flex-col gap-1">
+            <h2 className="font-medium">Video Pitch 1</h2>
+            <embed
+              className="bg-neutral-100 h-80 w-full rounded-xl shadow-md"
+              src="youtube.com"
+              type=""
+            />
+          </div>
+
+          {/* vp2 */}
+          <div className=" w-full flex items-center flex-col gap-1">
+            <h2 className="font-medium">Video Pitch 2</h2>
+            <embed
+              className="bg-neutral-100 h-80 w-full rounded-xl shadow-md"
+              src="youtube.com"
+              type=""
+            />
+          </div>
+        </div>
+
+        {/* info */}
+        <div className="flex flex-col justify-center items-center">
+          <p className="text-center">
+            Quer saber mais sobre quem somos?
+            <br />
+            Clique no botão abaixo.
+          </p>
+        </div>
+      </main>
+    </>
+  );
+}
