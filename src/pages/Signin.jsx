@@ -1,4 +1,4 @@
-export default function Login() {
+export default function Signin() {
   return (
     <>
       <main className="h-screen flex flex-col items-center justify-center">
@@ -47,10 +47,13 @@ export default function Login() {
                 href="/dashboard"
                 className="px-5 py-2 bg-neutral-950 text-white rounded-xl text-center hover:opacity-90"
               >
-                Login
+                Entrar
               </a>
             </form>
           </div>
+          <a className="hover:opacity-90" href="#">
+            Esqueci minha senha
+          </a>
         </section>
       </main>
     </>
