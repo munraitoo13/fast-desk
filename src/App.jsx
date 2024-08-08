@@ -6,7 +6,7 @@ export default function App() {
 
         <div className="flex gap-3 justify-center items-center">
           <a
-            className="px-5 py-2 bg-neutral-900 rounded-xl text-neutral-100 hover:opacity-90"
+            className="px-5 py-2 bg-neutral-950 rounded-xl text-neutral-100 hover:opacity-90"
             href="/login"
           >
             Login
