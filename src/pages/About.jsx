@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <>
-      <main className="px-10 py-20 w-full flex flex-col items-center justify-center gap-10">
+      <main className="p-5 w-full flex flex-col items-center justify-center gap-10">
         {/* logo */}
         <a href="/">
           <img src="/logo.png" alt="FastDesk logo" />

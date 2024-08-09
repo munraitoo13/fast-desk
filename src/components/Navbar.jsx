@@ -5,9 +5,9 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="relative">
+    <nav>
       {/* navbar */}
-      <div className="bg-neutral-100 rounded-xl mx-5 mt-5 flex justify-between items-center px-5 py-2">
+      <div className="bg-neutral-100 rounded-xl flex justify-between items-center px-5 py-2">
         {/* esquerda */}
         <div className="flex justify-center items-center gap-10">
           {/* logo */}
@@ -16,6 +16,10 @@ export default function Navbar() {
             src="/logo.png"
             alt="FastDesk logo"
           />
+
+          <span className="hover:text-green-600">
+            <b>Servidores</b>: Estáveis
+          </span>
         </div>
 
         {/* direita */}
@@ -34,7 +38,7 @@ export default function Navbar() {
 
       {/* menu */}
       {menuOpen && (
-        <div className="bg-neutral-100 rounded-xl gap-5 mt-5 mx-5 flex flex-col items-center py-10 absolute left-0 right-0 backdrop-blur-md">
+        <div className="bg-neutral-100 rounded-xl gap-5 mt-5 mx-5 flex flex-col items-center py-10 absolute left-0 right-0 z-50 shadow-md">
           {/* funcionário */}
           <div className="flex flex-col justify-center items-center gap-1">
             {/* perfil */}

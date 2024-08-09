@@ -14,7 +14,7 @@ export default function App() {
         </div>
       </nav>
 
-      <main className="flex flex-col justify-center items-center gap-10 my-20 mx-10">
+      <main className="flex flex-col justify-center items-center gap-10 p-5 mt-24">
         {/* embeds */}
         <div className="flex items-center lg:flex-row max-w-screen-xl flex-col justify-center w-full gap-5">
           {/* vp1 */}
