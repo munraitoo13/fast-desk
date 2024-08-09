@@ -133,6 +133,12 @@ export default function About() {
               <b>React Router</b>: A biblioteca utilizada para gerenciar as
               rotas do sistema e a navegação entre páginas.
             </li>
+
+            {/* tabler */}
+            <li>
+              <b>Tabler Icons</b>: A biblioteca de ícones utilizada para
+              adicionar ícones ao sistema de forma simples e elegante.
+            </li>
           </ul>
 
           <p className="">

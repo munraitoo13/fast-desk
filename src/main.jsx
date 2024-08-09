@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Navbar from "./components/Navbar.jsx";
 import App from "./App.jsx";
 import Signin from "./pages/Signin.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
@@ -22,7 +23,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <Dashboard />,
+    element: (
+      <>
+        <Navbar />
+        <Dashboard />
+      </>
+    ),
   },
 ]);
 
