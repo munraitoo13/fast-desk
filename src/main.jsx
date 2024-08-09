@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
 import App from "./App.jsx";
 import Signin from "./pages/Signin.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import About from "./pages/About.jsx";
+import Atendimentos from "./pages/Atendimentos.jsx";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -23,11 +23,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: (
-      <>
-        <Dashboard />
-      </>
-    ),
+    element: <Dashboard />,
+  },
+  {
+    path: "/atendimentos",
+    element: <Atendimentos />,
   },
 ]);
 
