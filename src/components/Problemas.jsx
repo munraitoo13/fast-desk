@@ -11,13 +11,13 @@ export default function Problemas({
   textColor,
 }) {
   return (
-    <div className="flex w-full justify-between">
+    <div className="flex w-full justify-between bg-neutral-100 p-5 rounded-xl">
       <div className="flex gap-3">
         <IconBulbFilled />
         <span>{nomeProblema}</span>
       </div>
 
-      <div className="flex gap-5">
+      <div className="flex gap-10">
         <span>
           <span
             className={`${bgColor} ${textColor} px-2 py-1 rounded-xl font-medium`}
@@ -26,7 +26,7 @@ export default function Problemas({
           </span>
         </span>
 
-        <div className="flex">
+        <div className="flex gap-3">
           <IconTrashFilled className="cursor-pointer" />
           <IconPencil className="cursor-pointer" />
         </div>

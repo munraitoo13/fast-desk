@@ -1,14 +1,57 @@
+const tecnologias = [
+  {
+    nome: "HTML",
+    descricao:
+      "A base estrutural do sistema, garantindo uma marcação semântica e acessível.",
+  },
+  {
+    nome: "CSS",
+    descricao:
+      "Utilizado para estilizar e dar vida aos elementos visuais do sistema.",
+  },
+  {
+    nome: "JavaScript",
+    descricao:
+      "A linguagem de programação essencial para a interatividade e dinamismo do sistema.",
+  },
+  {
+    nome: "React",
+    descricao:
+      "A biblioteca JavaScript para construir interfaces de usuário reativas e componentizadas.",
+  },
+  {
+    nome: "Tailwindcss",
+    descricao:
+      "O framework CSS utilizado para estilizar o site e criar um design responsivo.",
+  },
+  {
+    nome: "Vite",
+    descricao:
+      "O bundler utilizado para compilar e otimizar o código do sistema de forma rápida e eficiente.",
+  },
+  {
+    nome: "React Router",
+    descricao:
+      "A biblioteca utilizada para gerenciar as rotas do sistema e a navegação entre páginas.",
+  },
+  {
+    nome: "Tabler Icons",
+    descricao:
+      "A biblioteca de ícones utilizada para adicionar ícones ao sistema de forma simples e elegante.",
+  },
+];
+
 export default function About() {
   return (
     <>
-      <main className="p-5 w-full flex flex-col items-center justify-center gap-10">
+      <main className="m-5 p-5 bg-white rounded-xl flex flex-col items-center justify-center gap-10 drop-shadow-lg">
         {/* logo */}
         <a href="/">
           <img src="/logo.png" alt="FastDesk logo" />
         </a>
 
         {/* quem somos */}
-        <section className="space-y-2 text-center">
+        <section className="space-y-2 text-center max-w-lg">
           <h2 className="font-bold text-3xl">Quem somos?</h2>
           <p>
             Somos um grupo de alunos dedicados e apaixonados por tecnologia.
@@ -86,62 +129,30 @@ export default function About() {
         </section>
 
         {/* tecnologias */}
-        <section className="flex flex-col w-full gap-5 text-center">
+        <section className="flex flex-col items-center w-full gap-5 text-center">
           <h2 className="text-3xl font-bold">
             Principais tecnologias utilizadas
           </h2>
 
-          <p>
+          <p className="max-w-lg">
             O sistema <b>FastDesk</b> foi desenvolvido com uma combinação de
             tecnologias modernas e poderosas. Nossa equipe utilizou as seguintes
             tecnologias para criar uma experiência eficiente e amigável para os
             usuários:
           </p>
 
-          <ul className="text-left">
-            <li>
-              <b>HTML</b>: A base estrutural do sistema, garantindo uma marcação
-              semântica e acessível.
-            </li>
-
-            <li>
-              <b>CSS</b>: Utilizado para estilizar e dar vida aos elementos
-              visuais do sistema.
-            </li>
-
-            <li>
-              <b>JavaScript</b>: A linguagem de programação essencial para a
-              interatividade e dinamismo do sistema.
-            </li>
-
-            <li>
-              <b>React</b>: A biblioteca JavaScript para construir interfaces de
-              usuário reativas e componentizadas.
-            </li>
-
-            <li>
-              <b>Tailwindcss</b>: O framework CSS utilizado para estilizar o
-              site e criar um design responsivo.
-            </li>
-
-            <li>
-              <b>Vite</b>: O bundler utilizado para compilar e otimizar o código
-              do sistema de forma rápida e eficiente.
-            </li>
-
-            <li>
-              <b>React Router</b>: A biblioteca utilizada para gerenciar as
-              rotas do sistema e a navegação entre páginas.
-            </li>
-
-            {/* tabler */}
-            <li>
-              <b>Tabler Icons</b>: A biblioteca de ícones utilizada para
-              adicionar ícones ao sistema de forma simples e elegante.
-            </li>
+          <ul className="text-center flex flex-col gap-3">
+            {tecnologias.map((tecnologia) => (
+              <li
+                className="p-5 bg-neutral-100 rounded-xl"
+                key={tecnologia.nome}
+              >
+                <b>{tecnologia.nome}</b>: {tecnologia.descricao}
+              </li>
+            ))}
           </ul>
 
-          <p className="">
+          <p className="max-w-lg">
             Com essa combinação de tecnologias, estamos confiantes de que o
             sistema <b>FastDesk</b> oferece uma solução robusta e eficaz para
             gerenciamento de ativos e suporte.
