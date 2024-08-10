@@ -7,6 +7,7 @@ import Dashboard from "./pages/Dashboard.jsx";
 import About from "./pages/About.jsx";
 import Atendimentos from "./pages/Atendimentos.jsx";
 import Chat from "./pages/Chat.jsx";
+import Logs from "./pages/Logs.jsx";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/chat",
     element: <Chat />,
+  },
+  {
+    path: "/logs",
+    element: <Logs />,
   },
 ]);
 

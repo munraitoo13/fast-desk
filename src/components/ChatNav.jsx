@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <nav>
       {/* navbar */}
-      <div className="bg-neutral-100 rounded-xl flex justify-between items-center p-5">
+      <div className="bg-white rounded-xl flex justify-between items-center p-5 drop-shadow-lg">
         {/* esquerda */}
         <div className="flex justify-center items-center gap-10">
           <div className="flex gap-3 items-center">
@@ -25,7 +25,6 @@ export default function Navbar() {
 
         {/* direita */}
         <div className="flex items-center gap-3">
-          <IconPhone stroke={1.25} />
           <IconX
             className="cursor-pointer"
             onClick={() => {

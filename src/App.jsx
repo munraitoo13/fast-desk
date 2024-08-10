@@ -21,7 +21,7 @@ export default function App() {
           <div className=" w-full flex items-center flex-col gap-1">
             <h2 className="font-medium">Video Pitch 1</h2>
             <embed
-              className="bg-neutral-100 h-80 w-full rounded-xl shadow-md"
+              className="h-80 w-full rounded-xl shadow-lg"
               src="youtube.com"
               type=""
             />
@@ -31,7 +31,7 @@ export default function App() {
           <div className=" w-full flex items-center flex-col gap-1">
             <h2 className="font-medium">Video Pitch 2</h2>
             <embed
-              className="bg-neutral-100 h-80 w-full rounded-xl shadow-md"
+              className="h-80 w-full rounded-xl shadow-lg"
               src="youtube.com"
               type=""
             />

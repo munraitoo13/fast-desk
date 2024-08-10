@@ -46,11 +46,11 @@ export default function Atendimentos() {
         <h2 className="font-bold py-5 text-center">Atendimentos pendentes</h2>
 
         {/* grids */}
-        <div className="grid lg:grid-cols-2 gap-3 flex-grow pb-5 lg:pb-0">
-          <div className="bg-neutral-100 rounded-xl p-5">
-            <a href="/atendimentos" className="text-sm opacity-25">
-              Aguardando atendimento profissional (24h)
-            </a>
+        <div className="grid lg:grid-cols-2 gap-10 flex-grow pb-5 lg:pb-0">
+          <div className="bg-white rounded-xl p-10 drop-shadow-lg">
+            <span href="/atendimentos" className="text-sm opacity-25">
+              Aguardando atendimento geral
+            </span>
 
             <ul className="">
               {atendimentosHumanos.map((atendimento) => (
@@ -72,10 +72,10 @@ export default function Atendimentos() {
             </ul>
           </div>
 
-          <div className="bg-neutral-100 rounded-xl p-5">
-            <a href="/atendimentos" className="text-sm opacity-25">
-              Aguardando atendimento profissional (24h)
-            </a>
+          <div className="bg-white rounded-xl p-10 drop-shadow-lg">
+            <span href="/atendimentos" className="text-sm opacity-25">
+              Aguardando atendimento profissional
+            </span>
 
             <ul className="">
               {atendimentosProfissionais.map((atendimento) => (

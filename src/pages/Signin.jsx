@@ -1,7 +1,7 @@
 export default function Signin() {
   return (
     <main className="h-screen flex flex-col items-center justify-center">
-      <section className="flex flex-col items-center p-10 bg-neutral-100 shadow-md rounded-xl gap-3">
+      <section className="flex flex-col items-center p-10 bg-white shadow-md rounded-xl gap-3">
         <a href="/">
           <img src="/logo.png" alt="FastDesk logo" />
         </a>
@@ -18,7 +18,7 @@ export default function Signin() {
               id="email"
               placeholder="Email"
               name="email"
-              className="px-5 py-2 rounded-xl"
+              className="px-5 py-2 rounded-xl bg-neutral-100"
             />
 
             {/* pass */}
@@ -27,7 +27,7 @@ export default function Signin() {
               id="password"
               placeholder="Password"
               name="password"
-              className="px-5 py-2 rounded-xl"
+              className="px-5 py-2 rounded-xl bg-neutral-100"
             />
 
             {/* stay connected */}
@@ -46,6 +46,7 @@ export default function Signin() {
             </a>
           </form>
         </div>
+
         <a className="hover:opacity-90" href="#">
           Esqueci minha senha
         </a>

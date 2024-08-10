@@ -3,15 +3,13 @@ import InsightIA from "./InsightIA";
 
 export default function ChatAside() {
   return (
-    <aside className="bg-neutral-100 rounded-xl p-5 h-full flex flex-col items-center lg:max-w-sm gap-10 max-h-full">
+    <aside className="bg-white rounded-xl p-5 h-full flex flex-col items-center lg:max-w-sm gap-10 max-h-full drop-shadow-lg">
       <div className="gap-5 flex flex-col justify-center items-center">
         <img src="/logo.png" alt="FastDesk logo" className="w-16" />
 
         <div>
           <h3 className="font-medium text-center">Olá, Bruno</h3>
-          <p className="text-center text-neutral-600">
-            Aqui estão seu insights personalizados.
-          </p>
+          <p className="text-center">Aqui estão seu insights personalizados.</p>
         </div>
       </div>
 

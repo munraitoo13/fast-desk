@@ -12,15 +12,15 @@ import MensagemAtendente from "../components/MensagemAtendente";
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col lg:flex-row px-5 py-5 h-screen gap-3">
+    <div className="flex flex-col lg:flex-row px-5 py-5 h-screen gap-10">
       <div className="order-2 lg:order-1">
         <ChatAside />
       </div>
 
-      <main className="w-full flex flex-grow flex-col order-1 lg:order-2 gap-3 max-h-full">
+      <main className="w-full flex flex-grow flex-col order-1 lg:order-2 gap-10 max-h-full">
         <ChatNav />
 
-        <div className="bg-neutral-100 rounded-xl flex flex-grow flex-col overflow-y-auto">
+        <div className="bg-white rounded-xl flex flex-grow flex-col overflow-y-auto drop-shadow-lg">
           {/* chat */}
           <div className="flex flex-grow flex-col items-center gap-3 p-5">
             <MensagemIA
@@ -29,8 +29,6 @@ export default function Dashboard() {
             />
 
             <MensagemUser mensagem="Olá, estou com problemas no aplicativo. O saldo da minha conta não está atualizando. ☹️" />
-
-            <MensagemIA mensagem="Entendi, vou te ajudar com isso. Nossos servidores estão estáveis, o que significa que é um problema relacionado ao seu dispositivo." />
 
             <MensagemIA mensagem="De acordo com minha base de conhecimento, este problema se dá por um problema de cache no seu aplicativo. Peço que vá nas configurações do seu dispositivo e limpe o cache do nosso aplicativo." />
 
@@ -45,14 +43,14 @@ export default function Dashboard() {
         </div>
 
         {/* chatbox */}
-        <div className="flex items-center justify-center p-5 gap-3 bg-neutral-100">
+        <div className="flex items-center justify-center p-5 gap-3 bg-white rounded-xl drop-shadow-lg">
           <div className="flex gap-1">
             <IconSparkles stroke={1.25} />
             <IconPaperclip stroke={1.25} />
           </div>
 
           <input
-            className="px-5 py-2 w-full rounded-xl bg-neutral-100"
+            className="px-5 py-2 w-full rounded-xl bg-white"
             placeholder="Digite sua mensagem..."
             type="text"
             name="messageBox"
