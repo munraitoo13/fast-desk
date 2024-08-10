@@ -11,23 +11,22 @@ export default function Problemas({
   textColor,
 }) {
   return (
-    <div>
-      <div>
+    <div className="flex w-full justify-between">
+      <div className="flex gap-3">
         <IconBulbFilled />
         <span>{nomeProblema}</span>
       </div>
 
-      <div>
+      <div className="flex gap-5">
         <span>
-          <b>Status</b>:{" "}
           <span
-            lassName={`${bgColor} ${textColor} px-2 py-1 rounded-xl font-medium`}
+            className={`${bgColor} ${textColor} px-2 py-1 rounded-xl font-medium`}
           >
             {statusProblema}
           </span>
         </span>
 
-        <div>
+        <div className="flex">
           <IconTrashFilled className="cursor-pointer" />
           <IconPencil className="cursor-pointer" />
         </div>

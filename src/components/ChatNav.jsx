@@ -1,5 +1,4 @@
-import { IconX, IconPhone } from "@tabler/icons-react";
-import { useState } from "react";
+import { IconX } from "@tabler/icons-react";
 
 export default function Navbar() {
   const confirmExit = () => {

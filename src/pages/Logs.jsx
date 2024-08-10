@@ -6,36 +6,36 @@ const problemas = [
     id: 1,
     nomeProblema: "Dados financeiros não atualizam",
     statusProblema: "Pendente",
-    bgColor: "bg-yellow-600/10",
-    textColor: "text-white",
+    bgColor: "bg-red-600/10",
+    textColor: "text-red-600",
   },
   {
     id: 2,
     nomeProblema: "Cobrança indevida",
-    statusProblema: "Pendente",
+    statusProblema: "Em resolução",
     bgColor: "bg-yellow-600/10",
-    textColor: "text-white",
+    textColor: "text-yellow-600",
   },
   {
     id: 3,
     nomeProblema: "Cor do saldo financeiro errada",
-    statusProblema: "Pendente",
-    bgColor: "bg-yellow-600/10",
-    textColor: "text-white",
+    statusProblema: "Resolvido",
+    bgColor: "bg-green-600/10",
+    textColor: "text-green-600",
   },
   {
     id: 4,
     nomeProblema: "Erro 404 ao entrar no site",
-    statusProblema: "Resolvido",
-    bgColor: "bg-green-600/10",
-    textColor: "text-white",
+    statusProblema: "Pendente",
+    bgColor: "bg-red-600/10",
+    textColor: "text-red-600",
   },
   {
     id: 5,
     nomeProblema: "Notificações repetidas",
-    statusProblema: "Resolvido",
-    bgColor: "bg-green-600/10",
-    textColor: "text-white",
+    statusProblema: "Em resolução",
+    bgColor: "bg-yellow-600/10",
+    textColor: "text-yellow-600",
   },
 ];
 
@@ -48,15 +48,16 @@ export default function Logs() {
         <h2 className="font-bold py-5 text-center">Todos os chamados</h2>
 
         {/* grids */}
-        <div className="flex flex-col bg-white rounded-xl drop-shadow-lg flex-grow p-5 items-center">
+        <div className="flex flex-col bg-white rounded-xl drop-shadow-lg flex-grow p-5 items-center gap-10">
           <input
             type="search"
             name="searchAtendimentos"
             id="searchAtendimentos"
             className="w-1/3 px-5 py-3 bg-neutral-100 rounded-xl text-center"
+            placeholder="Pesquisar problemas..."
           />
 
-          <div>
+          <div className="w-full flex flex-col gap-3">
             {problemas.map((problema) => {
               return (
                 <Problemas
