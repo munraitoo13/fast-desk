@@ -46,8 +46,8 @@ export default function Atendimentos() {
         <h2 className="font-bold py-5 text-center">Atendimentos pendentes</h2>
 
         {/* grids */}
-        <div className="grid lg:grid-cols-2 gap-10 flex-grow pb-5 lg:pb-0">
-          <div className="bg-white rounded-xl p-10 drop-shadow-lg">
+        <div className="grid lg:grid-cols-2 gap-5 flex-grow pb-5 lg:pb-0">
+          <div className="bg-white rounded-xl p-10 shadow-sm">
             <span href="/atendimentos" className="text-sm opacity-25">
               Aguardando atendimento geral
             </span>
@@ -72,7 +72,7 @@ export default function Atendimentos() {
             </ul>
           </div>
 
-          <div className="bg-white rounded-xl p-10 drop-shadow-lg">
+          <div className="bg-white rounded-xl p-10 shadow-sm">
             <span href="/atendimentos" className="text-sm opacity-25">
               Aguardando atendimento profissional
             </span>

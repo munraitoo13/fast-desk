@@ -41,18 +41,42 @@ const tecnologias = [
   },
 ];
 
+const membros = [
+  {
+    nome: "Augusto Mendes",
+    foto: "/augusto.png",
+    github: "https://github.com/munraitoo13",
+    funcao: "Design e Desenvolvimento",
+  },
+  {
+    nome: "Bruno Raniere",
+    foto: "/bruno.png",
+    github: "https://github.com/brunoraniere",
+    funcao: "Apresentação",
+  },
+  {
+    nome: "Hermann Marinho",
+    foto: "/hermann.png",
+    github: "https://github.com/HermannMarinho",
+    funcao: "Design e Brainstorming",
+  },
+];
+
 export default function About() {
   return (
     <>
-      <main className="m-5 p-5 bg-white rounded-xl flex flex-col items-center justify-center gap-10 drop-shadow-lg">
+      <main className="m-5 p-5 bg-white rounded-xl flex flex-col items-center justify-center gap-10 shadow-sm">
         {/* logo */}
-        <a href="/">
-          <img src="/logo.png" alt="FastDesk logo" />
-        </a>
+        <div>
+          <a href="/">
+            <img src="/logo.png" alt="FastDesk logo" />
+          </a>
+        </div>
 
         {/* quem somos */}
         <section className="space-y-2 text-center max-w-lg">
           <h2 className="font-bold text-3xl">Quem somos?</h2>
+
           <p>
             Somos um grupo de alunos dedicados e apaixonados por tecnologia.
             Nosso objetivo é criar um sistema de alta qualidade, usabilidade e
@@ -64,68 +88,28 @@ export default function About() {
 
         {/* membros */}
         <section className="w-full flex-col gap-10 lg:flex-row flex lg:justify-evenly">
-          {/* Augusto */}
-          <div className="flex flex-col justify-center items-center text-center">
-            <img
-              className="rounded-full h-40 w-40"
-              src="/augusto.png"
-              alt="Membro Augusto"
-            />
-
-            <a
-              href="https://github.com/munraitoo13"
-              className="font-bold text-xl"
-              target="_blank"
+          {membros.map((membro) => (
+            <div
+              className="flex flex-col justify-center items-center text-center"
+              key={membro.nome}
             >
-              Augusto
-              <br />
-              Mendes
-            </a>
+              <img
+                className="rounded-full h-40 w-40"
+                src={membro.foto}
+                alt={`Membro ${membro.nome}`}
+              />
 
-            <p>Desenvolvimento</p>
-          </div>
+              <a
+                href={membro.github}
+                className="font-bold text-xl"
+                target="_blank"
+              >
+                {membro.nome}
+              </a>
 
-          {/* Bruno */}
-          <div className="flex flex-col justify-center items-center text-center">
-            <img
-              className="rounded-full h-40 w-40"
-              src="/bruno.png"
-              alt="Membro Bruno"
-            />
-
-            <a
-              href="https://github.com/brunoraniere"
-              className="font-bold text-xl"
-              target="_blank"
-            >
-              Bruno
-              <br />
-              Raniere
-            </a>
-
-            <p>Apresentação</p>
-          </div>
-
-          {/* Hermann */}
-          <div className="flex flex-col justify-center items-center text-center">
-            <img
-              className="rounded-full h-40 w-40"
-              src="/hermann.png"
-              alt="Membro Hermann"
-            />
-
-            <a
-              href="https://github.com/HermannMarinho"
-              target="_blank"
-              className="font-bold text-xl"
-            >
-              Hermann
-              <br />
-              Marinho
-            </a>
-
-            <p>Brainstorming</p>
-          </div>
+              <p>{membro.funcao}</p>
+            </div>
+          ))}
         </section>
 
         {/* tecnologias */}
@@ -141,7 +125,7 @@ export default function About() {
             usuários:
           </p>
 
-          <ul className="text-center flex flex-col gap-3">
+          <ul className="text-left grid grid-cols-1 lg:grid-cols-2 max-w-xl gap-3">
             {tecnologias.map((tecnologia) => (
               <li
                 className="p-5 bg-neutral-100 rounded-xl"
@@ -159,6 +143,7 @@ export default function About() {
           </p>
         </section>
 
+        {/* botão voltar */}
         <a
           className="py-2 px-5 bg-neutral-950 text-neutral-100 rounded-xl hover:opacity-90"
           href="/"

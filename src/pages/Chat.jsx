@@ -20,7 +20,7 @@ export default function Dashboard() {
       <main className="w-full flex flex-grow flex-col order-1 lg:order-2 gap-10 max-h-full">
         <ChatNav />
 
-        <div className="bg-white rounded-xl flex flex-grow flex-col overflow-y-auto drop-shadow-lg">
+        <div className="bg-white rounded-xl flex flex-grow flex-col overflow-y-auto shadow-sm">
           {/* chat */}
           <div className="flex flex-grow flex-col items-center gap-3 p-5">
             <MensagemIA
@@ -43,7 +43,7 @@ export default function Dashboard() {
         </div>
 
         {/* chatbox */}
-        <div className="flex items-center justify-center p-5 gap-3 bg-white rounded-xl drop-shadow-lg">
+        <div className="flex items-center justify-center p-5 gap-3 bg-white rounded-xl shadow-sm">
           <div className="flex gap-1">
             <IconSparkles stroke={1.25} />
             <IconPaperclip stroke={1.25} />

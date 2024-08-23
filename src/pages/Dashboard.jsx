@@ -37,8 +37,8 @@ export default function Dashboard() {
         </h2>
 
         {/* grids */}
-        <div className="grid lg:grid-rows-3 gap-10 flex-grow pb-5 lg:pb-0">
-          <div className="gap-10 grid lg:grid-cols-3">
+        <div className="grid lg:grid-rows-3 gap-5 flex-grow pb-5 lg:pb-0">
+          <div className="gap-5 grid lg:grid-cols-3">
             {cardData.map((card) => {
               return (
                 <DashboardCard
@@ -52,7 +52,7 @@ export default function Dashboard() {
             })}
           </div>
 
-          <div className="grid row-span-2 gap-10 lg:grid-cols-1">
+          <div className="grid row-span-2 lg:grid-cols-1">
             <DashboardCardAtend />
           </div>
         </div>

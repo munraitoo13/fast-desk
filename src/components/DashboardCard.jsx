@@ -6,7 +6,7 @@ export default function DashboardCard({
   bgColor,
 }) {
   return (
-    <div className="bg-white rounded-xl p-10 flex flex-col justify-between drop-shadow-lg">
+    <div className="bg-white rounded-xl p-10 flex flex-col justify-between shadow-sm">
       {/* title */}
       <h3 href="/atendimentos" className="text-xl font-bold">
         {title}

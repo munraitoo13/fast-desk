@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <nav>
       {/* navbar */}
-      <div className="bg-white rounded-xl flex justify-between items-center px-5 py-2 drop-shadow-lg">
+      <div className="bg-white rounded-xl flex justify-between items-center px-5 py-2 shadow-sm">
         {/* esquerda */}
         <div className="flex justify-center items-center gap-10">
           {/* logo */}
@@ -47,7 +47,7 @@ export default function Navbar() {
       {/* menu */}
       {menuOpen && (
         <div className="max-w-screen-xl relative">
-          <div className="bg-white rounded-xl gap-5 mt-5 flex flex-col py-10 absolute  right-0 left-0 z-10 shadow-lg mx-auto px-20">
+          <div className="bg-white rounded-xl gap-5 mt-5 flex flex-col py-10 absolute  right-0 left-0 z-10 shadow-sm mx-auto px-20">
             {/* funcionário */}
             <div className="flex flex-col justify-center items-center gap-1">
               {/* perfil */}

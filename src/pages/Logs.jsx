@@ -48,7 +48,7 @@ export default function Logs() {
         <h2 className="font-bold py-5 text-center">Todos os chamados</h2>
 
         {/* grids */}
-        <div className="flex flex-col bg-white rounded-xl drop-shadow-lg flex-grow p-5 items-center gap-10">
+        <div className="flex flex-col bg-white rounded-xl shadow-sm flex-grow p-5 items-center gap-10">
           <input
             type="search"
             name="searchAtendimentos"

@@ -1,4 +1,4 @@
-export default function App() {
+export default function Index() {
   return (
     <>
       <nav className="w-full p-5 flex justify-between h-24">
@@ -20,21 +20,31 @@ export default function App() {
           {/* vp1 */}
           <div className=" w-full flex items-center flex-col gap-1">
             <h2 className="font-medium">Video Pitch 1</h2>
-            <embed
-              className="h-80 w-full rounded-xl shadow-lg"
-              src="youtube.com"
-              type=""
-            />
+
+            <iframe
+              className="rounded-xl w-full h-96"
+              src="https://www.youtube.com/embed/YDZft10HW74"
+              title="Fast Desk - Agilidade no atendimento"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
 
           {/* vp2 */}
           <div className=" w-full flex items-center flex-col gap-1">
             <h2 className="font-medium">Video Pitch 2</h2>
-            <embed
-              className="h-80 w-full rounded-xl shadow-lg"
-              src="youtube.com"
-              type=""
-            />
+
+            <iframe
+              className="rounded-xl w-full h-96"
+              src="https://www.youtube.com/embed/04n2zv-h9Ys"
+              title="FastDesk | Uma solução de atendimento inovadora"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
 

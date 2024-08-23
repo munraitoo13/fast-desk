@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav>
       {/* navbar */}
-      <div className="bg-white rounded-xl flex justify-between items-center p-5 drop-shadow-lg">
+      <div className="bg-white rounded-xl flex justify-between items-center p-5 shadow-sm">
         {/* esquerda */}
         <div className="flex justify-center items-center gap-10">
           <div className="flex gap-3 items-center">

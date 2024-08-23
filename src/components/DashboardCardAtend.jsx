@@ -52,7 +52,7 @@ export default function DashboardCardAtend() {
   };
 
   return (
-    <div className="bg-white p-5 rounded-xl flex flex-col drop-shadow-lg gap-10">
+    <div className="bg-white p-5 rounded-xl flex flex-col shadow-sm gap-10">
       <div className="flex justify-between flex-col items-center gap-3">
         <h3 className="font-bold text-xl">Atendimentos recentes</h3>
 
