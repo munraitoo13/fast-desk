@@ -1,3 +1,8 @@
+import logo from "../assets/images/logo.png";
+import bruno from "../assets/images/bruno.png";
+import augusto from "../assets/images/augusto.png";
+import hermann from "../assets/images/hermann.png";
+
 const tecnologias = [
   {
     nome: "HTML",
@@ -43,20 +48,20 @@ const tecnologias = [
 
 const membros = [
   {
-    nome: "Augusto Mendes",
-    foto: "/augusto.png",
-    github: "https://github.com/munraitoo13",
-    funcao: "Design e Desenvolvimento",
-  },
-  {
     nome: "Bruno Raniere",
-    foto: "/bruno.png",
+    foto: bruno,
     github: "https://github.com/brunoraniere",
     funcao: "Apresentação",
   },
   {
+    nome: "Augusto Mendes",
+    foto: augusto,
+    github: "https://github.com/munraitoo13",
+    funcao: "Design e Desenvolvimento",
+  },
+  {
     nome: "Hermann Marinho",
-    foto: "/hermann.png",
+    foto: hermann,
     github: "https://github.com/HermannMarinho",
     funcao: "Design e Brainstorming",
   },
@@ -69,7 +74,7 @@ export default function About() {
         {/* logo */}
         <div>
           <a href="/">
-            <img src="/logo.png" alt="FastDesk logo" />
+            <img src={logo} alt="FastDesk logo" />
           </a>
         </div>
 

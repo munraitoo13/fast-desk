@@ -1,3 +1,5 @@
+import logo from "../assets/images/logo.png";
+import perfil from "../assets/images/perfil.png";
 import { IconMenu2, IconMenu3 } from "@tabler/icons-react";
 import { useState } from "react";
 
@@ -19,11 +21,7 @@ export default function Navbar() {
         {/* esquerda */}
         <div className="flex justify-center items-center gap-10">
           {/* logo */}
-          <img
-            className="w-16 object-contain"
-            src="/logo.png"
-            alt="FastDesk logo"
-          />
+          <img className="w-16 object-contain" src={logo} alt="FastDesk logo" />
 
           <span className="hover:text-green-600">
             <b>Servidores</b>: Estáveis
@@ -53,7 +51,7 @@ export default function Navbar() {
               {/* perfil */}
               <img
                 className="rounded-full w-16 object-contain"
-                src="/perfil.png"
+                src={perfil}
                 alt="Foto de perfil"
               />
 

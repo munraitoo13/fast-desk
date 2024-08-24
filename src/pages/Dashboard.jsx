@@ -1,3 +1,4 @@
+import logo from "../assets/images/logo.png";
 import DashboardCard from "../components/DashboardCard";
 import DashboardCardAtend from "../components/DashboardCardAtend";
 import Navbar from "../components/Navbar";

@@ -1,9 +1,11 @@
+import logo from "../assets/images/logo.png";
+
 export default function Signin() {
   return (
     <main className="h-screen flex flex-col items-center justify-center">
       <section className="flex flex-col items-center p-10 bg-white shadow-sm rounded-xl gap-3">
         <a href="/">
-          <img src="/logo.png" alt="FastDesk logo" />
+          <img src={logo} alt="FastDesk logo" />
         </a>
 
         <div>

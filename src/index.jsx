@@ -1,8 +1,10 @@
+import logo from "./assets/images/logo.png";
+
 export default function Index() {
   return (
     <>
       <nav className="w-full p-5 flex justify-between h-24">
-        <img src="/logo.png" alt="logo" />
+        <img src={logo} alt="logo" />
 
         <div className="flex gap-3 justify-center items-center">
           <a

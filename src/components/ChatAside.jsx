@@ -1,11 +1,12 @@
 import { IconChevronRight } from "@tabler/icons-react";
 import InsightIA from "./InsightIA";
+import logo from "../assets/images/logo.png";
 
 export default function ChatAside() {
   return (
     <aside className="bg-white rounded-xl p-5 h-full flex flex-col items-center lg:max-w-sm gap-10 max-h-full shadow-sm">
       <div className="gap-5 flex flex-col justify-center items-center">
-        <img src="/logo.png" alt="FastDesk logo" className="w-16" />
+        <img src={logo} alt="FastDesk logo" className="w-16" />
 
         <div>
           <h3 className="font-medium text-center">Olá, Bruno</h3>

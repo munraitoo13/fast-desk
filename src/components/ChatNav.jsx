@@ -1,4 +1,5 @@
 import { IconX } from "@tabler/icons-react";
+import cliente from "../assets/images/cliente.jpg";
 
 export default function Navbar() {
   const confirmExit = () => {
@@ -13,11 +14,7 @@ export default function Navbar() {
         {/* esquerda */}
         <div className="flex justify-center items-center gap-10">
           <div className="flex gap-3 items-center">
-            <img
-              src="/cliente.jpg"
-              alt="Cliente"
-              className="rounded-full h-8"
-            />
+            <img src={cliente} alt="Cliente" className="rounded-full h-8" />
             <span>John Doe</span>
           </div>
         </div>
