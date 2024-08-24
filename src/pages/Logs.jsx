@@ -6,36 +6,26 @@ const problemas = [
     id: 1,
     nomeProblema: "Dados financeiros não atualizam",
     statusProblema: "Pendente",
-    bgColor: "bg-red-600/10",
-    textColor: "text-red-600",
   },
   {
     id: 2,
     nomeProblema: "Cobrança indevida",
     statusProblema: "Em resolução",
-    bgColor: "bg-yellow-600/10",
-    textColor: "text-yellow-600",
   },
   {
     id: 3,
     nomeProblema: "Cor do saldo financeiro errada",
     statusProblema: "Resolvido",
-    bgColor: "bg-green-600/10",
-    textColor: "text-green-600",
   },
   {
     id: 4,
     nomeProblema: "Erro 404 ao entrar no site",
     statusProblema: "Pendente",
-    bgColor: "bg-red-600/10",
-    textColor: "text-red-600",
   },
   {
     id: 5,
     nomeProblema: "Notificações repetidas",
     statusProblema: "Em resolução",
-    bgColor: "bg-yellow-600/10",
-    textColor: "text-yellow-600",
   },
 ];
 
@@ -64,8 +54,6 @@ export default function Logs() {
                   key={problema.id}
                   nomeProblema={problema.nomeProblema}
                   statusProblema={problema.statusProblema}
-                  bgColor={problema.bgColor}
-                  textColor={problema.textColor}
                 />
               );
             })}

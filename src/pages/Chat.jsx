@@ -12,12 +12,12 @@ import MensagemAtendente from "../components/MensagemAtendente";
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col lg:flex-row px-5 py-5 h-screen gap-10">
+    <div className="flex flex-col lg:flex-row px-5 py-5 h-screen gap-5">
       <div className="order-2 lg:order-1">
         <ChatAside />
       </div>
 
-      <main className="w-full flex flex-grow flex-col order-1 lg:order-2 gap-10 max-h-full">
+      <main className="w-full flex flex-grow flex-col order-1 lg:order-2 gap-5 max-h-full">
         <ChatNav />
 
         <div className="bg-white rounded-xl flex flex-grow flex-col overflow-y-auto shadow-sm">

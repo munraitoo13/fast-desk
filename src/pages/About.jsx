@@ -130,7 +130,7 @@ export default function About() {
             usuários:
           </p>
 
-          <ul className="text-left grid grid-cols-1 lg:grid-cols-2 max-w-xl gap-3">
+          <ul className="mx-20 text-left grid grid-cols-1 lg:grid-cols-2 gap-3">
             {tecnologias.map((tecnologia) => (
               <li
                 className="p-5 bg-neutral-100 rounded-xl"

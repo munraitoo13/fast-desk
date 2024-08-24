@@ -25,31 +25,18 @@ const atendimentos = [
 ];
 
 export default function DashboardCardAtend() {
-  const getStatusStyle = (status) => {
+  function getStatus(status) {
     switch (status) {
       case "Pendente":
-        return {
-          textColor: "text-red-600",
-          bgColor: "bg-red-600/10",
-          text: "Pendente",
-        };
-
-      case "Resolvido":
-        return {
-          textColor: "text-green-600",
-          bgColor: "bg-green-600/10",
-          text: "Resolvido",
-        };
+        return "bg-red-600/10 text-red-600";
       case "Em resolução":
-        return {
-          textColor: "text-yellow-600",
-          bgColor: "bg-yellow-600/10",
-          text: "Em resolução",
-        };
+        return "bg-yellow-600/10 text-yellow-600";
+      case "Resolvido":
+        return "bg-green-600/10 text-green-600";
       default:
-        return { color: "black", text: status };
+        return "bg-gray-600/10 text-gray-600";
     }
-  };
+  }
 
   return (
     <div className="bg-white p-5 rounded-xl flex flex-col shadow-sm gap-10">
@@ -79,7 +66,6 @@ export default function DashboardCardAtend() {
 
         <tbody>
           {atendimentos.map((atendimento, index) => {
-            const statusStyle = getStatusStyle(atendimento.status);
             return (
               <tr key={index} className="odd:bg-neutral-100 ">
                 <td className="font-medium flex items-center gap-1 p-5">
@@ -89,9 +75,11 @@ export default function DashboardCardAtend() {
                 <td>{atendimento.problema}</td>
                 <td>
                   <span
-                    className={`${statusStyle.bgColor} ${statusStyle.textColor} px-2 py-1 rounded-xl font-medium`}
+                    className={`${getStatus(
+                      atendimento.status
+                    )} px-2 py-1 rounded-xl font-medium`}
                   >
-                    {statusStyle.text}
+                    {atendimento.status}
                   </span>
                 </td>
                 <td>{atendimento.responsavel}</td>
