@@ -27,7 +27,7 @@ const tecnologias = [
   {
     nome: "Tailwindcss",
     descricao:
-      "O framework CSS utilizado para estilizar o site e criar um design responsivo.",
+      "Junto de suas dependências (PostCSS e Autoprefixer), é o framework CSS utilizado para estilizar o site e criar um design responsivo.",
   },
   {
     nome: "Vite",
