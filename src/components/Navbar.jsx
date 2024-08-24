@@ -1,5 +1,6 @@
 import logo from "../assets/images/logo.png";
 import perfil from "../assets/images/perfil.png";
+import { useLocation } from "react-router-dom";
 import { IconMenu2, IconMenu3 } from "@tabler/icons-react";
 import { useState } from "react";
 
@@ -13,6 +14,7 @@ const routes = [
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <nav>
@@ -68,7 +70,15 @@ export default function Navbar() {
                 <a
                   key={route.path}
                   href={route.path}
-                  className="hover:font-medium"
+                  className={`hover:font-medium ${
+                    location.pathname === route.path ? "font-medium" : ""
+                  }`}
+                  onClick={(e) => {
+                    if (location.pathname === route.path) {
+                      e.preventDefault();
+                      setMenuOpen(false);
+                    }
+                  }}
                 >
                   {route.name}
                 </a>

@@ -22,7 +22,7 @@ export default function ChatAside() {
 
         <InsightIA mensagem="Peça prints do estado atual do aplicativo, talvez haja algo despercebido." />
 
-        <IconChevronRight className="cursor-pointer" />
+        <IconChevronRight stroke={1.25} className="cursor-pointer" />
       </div>
     </aside>
   );

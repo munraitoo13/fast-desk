@@ -69,7 +69,7 @@ export default function DashboardCardAtend() {
             return (
               <tr key={index} className="odd:bg-neutral-100 ">
                 <td className="font-medium flex items-center gap-1 p-5">
-                  <IconUserFilled />
+                  <IconUserFilled stroke={1.25} />
                   {atendimento.cliente}
                 </td>
                 <td>{atendimento.problema}</td>

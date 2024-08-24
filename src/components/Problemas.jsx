@@ -1,10 +1,10 @@
-import {
-  IconBulbFilled,
-  IconTrashFilled,
-  IconPencil,
-} from "@tabler/icons-react";
+import { IconBulbFilled, IconTrash, IconPencil } from "@tabler/icons-react";
 
-export default function Problemas({ nomeProblema, statusProblema }) {
+export default function Problemas({
+  nomeProblema,
+  statusProblema,
+  categoriaProblema,
+}) {
   function getStatus(status) {
     switch (status) {
       case "Pendente":
@@ -19,26 +19,25 @@ export default function Problemas({ nomeProblema, statusProblema }) {
   }
 
   return (
-    <div className="flex w-full justify-between bg-neutral-100 p-5 rounded-xl">
-      <div className="flex gap-3">
-        <IconBulbFilled />
+    <div className="flex flex-col lg:flex-row justify-center lg:justify-between flex-grow w-full items-center bg-neutral-100 p-5 rounded-xl gap-5">
+      <div className="flex flex-col lg:flex-row gap-1 lg:gap-3 items-center justify-center">
+        <IconBulbFilled stroke={1.25} />
         <span>{nomeProblema}</span>
+        <span className="opacity-25">{categoriaProblema}</span>
       </div>
 
-      <div className="flex gap-10">
-        <span>
-          <span
-            className={`${getStatus(
-              statusProblema
-            )} px-2 py-1 rounded-xl font-medium`}
-          >
-            {statusProblema}
-          </span>
+      <div className="flex flex-col lg:flex-row gap-10 items-center justify-center">
+        <span
+          className={`${getStatus(
+            statusProblema
+          )} px-2 py-1 rounded-xl font-medium`}
+        >
+          {statusProblema}
         </span>
 
         <div className="flex gap-3">
-          <IconTrashFilled className="cursor-pointer" />
-          <IconPencil className="cursor-pointer" />
+          <IconTrash stroke={1.25} className="cursor-pointer" />
+          <IconPencil stroke={1.25} className="cursor-pointer" />
         </div>
       </div>
     </div>

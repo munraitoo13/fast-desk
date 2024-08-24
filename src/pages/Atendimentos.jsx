@@ -103,7 +103,7 @@ export default function Atendimentos() {
                       target="_blank"
                       className="hover:opacity-75"
                     >
-                      <IconMessageFilled />
+                      <IconMessageFilled stroke={1.25} />
                     </a>
                   </div>
                 </li>
@@ -149,7 +149,7 @@ export default function Atendimentos() {
                       target="_blank"
                       className="hover:opacity-75"
                     >
-                      <IconMessageFilled />
+                      <IconMessageFilled stroke={1.25} />
                     </a>
                   </div>
                 </li>
